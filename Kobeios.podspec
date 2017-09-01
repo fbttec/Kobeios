@@ -27,9 +27,9 @@ Basic logic that we reapeat every day :)
 
   s.source_files = 'Kobeios/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'Kobeios' => ['Kobeios/Assets/*.png']
-  # }
+  s.resource_bundles = {
+     'Kobeios' => ['Kobeios/Assets/*.png']
+  }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'

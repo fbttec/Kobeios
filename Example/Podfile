@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'Kobeios_Example' do
+  pod 'Kobeios', :path => '../'
+
+  target 'Kobeios_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

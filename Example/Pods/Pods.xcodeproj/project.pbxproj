@@ -8,13 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		01BA5837EEC99063FB4E4673A32CEA35 /* Pods-Kobeios_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EAA8475C128A6BDD8EE4EB2760FDEC5 /* Pods-Kobeios_Example-dummy.m */; };
+		114865C01F58ED4A004F3E10 /* KobeDynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114865BF1F58ED4A004F3E10 /* KobeDynamic.swift */; };
+		114865C31F58EE65004F3E10 /* KobeStringable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114865C21F58EE65004F3E10 /* KobeStringable.swift */; };
+		114865C51F58F310004F3E10 /* KobeUIVIewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114865C41F58F310004F3E10 /* KobeUIVIewExtension.swift */; };
+		114865C71F58F4D7004F3E10 /* KobeUIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114865C61F58F4D7004F3E10 /* KobeUIViewControllerExtension.swift */; };
+		114865CA1F58F585004F3E10 /* KobeKeyboardable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114865C91F58F585004F3E10 /* KobeKeyboardable.swift */; };
+		114865CC1F58F67A004F3E10 /* KobeUIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114865CB1F58F67A004F3E10 /* KobeUIColorExtension.swift */; };
 		1BE7D195C509A98C27C4C621821C1133 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		2D5118F3302C32B3AB7796C84A4B6F67 /* Pods-Kobeios_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E657781B337B0C7C31FC14686936A95D /* Pods-Kobeios_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3CAB8C25B850AF719EAE437AA109A82A /* Pods-Kobeios_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 77C0E9C2788291A642705A25B9CECF65 /* Pods-Kobeios_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		99A482062FEBFF5774D5144EB61D046D /* Kobeios-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B84A3E3A50B03AFB519F0A139F2E5BF8 /* Kobeios-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A555560667E68B16F9F0D01B31DA8E60 /* Kobeios-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4767A136C99C34905C38B2BCC34D15F0 /* Kobeios-dummy.m */; };
 		CEEC887D905476C843D1CCA2ED1B3795 /* Pods-Kobeios_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A7C4A2881C0C648D157079AE3AC3FD5 /* Pods-Kobeios_Tests-dummy.m */; };
-		D2E8F816104FCDD466BBEB4AD590404C /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A7502A9D6D5963CD1D35F469F3789C /* ReplaceMe.swift */; };
 		D4E0AEE98194E22C24ECBDBF7AAD3A93 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		FF0282C7C0220A1733510030FD6DBE80 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 /* End PBXBuildFile section */
@@ -30,35 +35,40 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		114865BF1F58ED4A004F3E10 /* KobeDynamic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KobeDynamic.swift; sourceTree = "<group>"; };
+		114865C21F58EE65004F3E10 /* KobeStringable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KobeStringable.swift; sourceTree = "<group>"; };
+		114865C41F58F310004F3E10 /* KobeUIVIewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KobeUIVIewExtension.swift; sourceTree = "<group>"; };
+		114865C61F58F4D7004F3E10 /* KobeUIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KobeUIViewControllerExtension.swift; sourceTree = "<group>"; };
+		114865C91F58F585004F3E10 /* KobeKeyboardable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KobeKeyboardable.swift; sourceTree = "<group>"; };
+		114865CB1F58F67A004F3E10 /* KobeUIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KobeUIColorExtension.swift; sourceTree = "<group>"; };
 		130D32F5A68EA8DE929C28B059F21B6F /* Pods-Kobeios_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Kobeios_Tests-resources.sh"; sourceTree = "<group>"; };
 		1CC430D40D4BC1F4D82346D27AC063CE /* Pods-Kobeios_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Kobeios_Example-frameworks.sh"; sourceTree = "<group>"; };
 		29D0C235B0B6BBA8FA85BE8A1E1C8074 /* Kobeios-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Kobeios-prefix.pch"; sourceTree = "<group>"; };
 		2E1F14EBEE10DE89A613341E5C1782B4 /* Pods-Kobeios_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Kobeios_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		3674E9DB0A6F76EED54AE910DD8829A5 /* Pods-Kobeios_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Kobeios_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		37A22C17301FF7413A53A8702C225A64 /* Kobeios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Kobeios.framework; path = Kobeios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		37A22C17301FF7413A53A8702C225A64 /* Kobeios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Kobeios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4767A136C99C34905C38B2BCC34D15F0 /* Kobeios-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Kobeios-dummy.m"; sourceTree = "<group>"; };
-		4779E375E6DF010667B43A69F8F10D2B /* Pods_Kobeios_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Kobeios_Tests.framework; path = "Pods-Kobeios_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4779E375E6DF010667B43A69F8F10D2B /* Pods_Kobeios_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kobeios_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A6B521521A2CB1F3CD0BD3571032F3F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4AE239B5105046224470809F771D3D5F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		698421782AE5F63978369FCC00D63925 /* Pods-Kobeios_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Kobeios_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		77C0E9C2788291A642705A25B9CECF65 /* Pods-Kobeios_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Kobeios_Example-umbrella.h"; sourceTree = "<group>"; };
-		7E92229F9D8AC4DD30971BBC4A1C3FEA /* Pods-Kobeios_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Kobeios_Tests.modulemap"; sourceTree = "<group>"; };
+		7E92229F9D8AC4DD30971BBC4A1C3FEA /* Pods-Kobeios_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Kobeios_Tests.modulemap"; sourceTree = "<group>"; };
 		7EAA8475C128A6BDD8EE4EB2760FDEC5 /* Pods-Kobeios_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Kobeios_Example-dummy.m"; sourceTree = "<group>"; };
 		8A7C4A2881C0C648D157079AE3AC3FD5 /* Pods-Kobeios_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Kobeios_Tests-dummy.m"; sourceTree = "<group>"; };
 		9317870427F4C2A2FF3B39B3A9BAA6BE /* Pods-Kobeios_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Kobeios_Example-resources.sh"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		941B81625DC9ABBCE674EB753C8817C6 /* Pods-Kobeios_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Kobeios_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		99E6F3E14976C1884A541A718B4FA8F8 /* Kobeios.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Kobeios.modulemap; sourceTree = "<group>"; };
+		99E6F3E14976C1884A541A718B4FA8F8 /* Kobeios.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Kobeios.modulemap; sourceTree = "<group>"; };
 		9CEE0809B01202D88E37D20A6D155BBE /* Pods-Kobeios_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Kobeios_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		A7B662699EB8B647FB6D79F903B44C2B /* Pods-Kobeios_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Kobeios_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		AE2C43BFD801B264CCD9BDE49BBAF91A /* Pods-Kobeios_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Kobeios_Example.modulemap"; sourceTree = "<group>"; };
+		AE2C43BFD801B264CCD9BDE49BBAF91A /* Pods-Kobeios_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Kobeios_Example.modulemap"; sourceTree = "<group>"; };
 		AF645385D762BD1600D2718E4C82524D /* Pods-Kobeios_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Kobeios_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		B6A7502A9D6D5963CD1D35F469F3789C /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReplaceMe.swift; sourceTree = "<group>"; };
 		B84A3E3A50B03AFB519F0A139F2E5BF8 /* Kobeios-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Kobeios-umbrella.h"; sourceTree = "<group>"; };
 		C1BF6C79FCA8B66C02A28A01936ADBC9 /* Kobeios.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Kobeios.xcconfig; sourceTree = "<group>"; };
 		C9AFE17382DC8EEBADEBA7D002ECB3D9 /* Pods-Kobeios_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Kobeios_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		CC94B2EEDDAB0EB54D45FAB74935B89C /* Pods_Kobeios_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Kobeios_Example.framework; path = "Pods-Kobeios_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC94B2EEDDAB0EB54D45FAB74935B89C /* Pods_Kobeios_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kobeios_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DECCCD724AA8B8C76AFBB96B111D35B0 /* Pods-Kobeios_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Kobeios_Example.release.xcconfig"; sourceTree = "<group>"; };
 		E657781B337B0C7C31FC14686936A95D /* Pods-Kobeios_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Kobeios_Tests-umbrella.h"; sourceTree = "<group>"; };
 		EEC061CD11360B6F1FD7FD68611D05A2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -92,12 +102,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		114865BE1F58ED2F004F3E10 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				114865BF1F58ED4A004F3E10 /* KobeDynamic.swift */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		114865C11F58EDE7004F3E10 /* Trait */ = {
+			isa = PBXGroup;
+			children = (
+				114865C21F58EE65004F3E10 /* KobeStringable.swift */,
+				114865C91F58F585004F3E10 /* KobeKeyboardable.swift */,
+			);
+			name = Trait;
+			sourceTree = "<group>";
+		};
+		114865C81F58F526004F3E10 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				114865C41F58F310004F3E10 /* KobeUIVIewExtension.swift */,
+				114865C61F58F4D7004F3E10 /* KobeUIViewControllerExtension.swift */,
+				114865CB1F58F67A004F3E10 /* KobeUIColorExtension.swift */,
+			);
+			name = Extension;
+			sourceTree = "<group>";
+		};
 		11D067DB03B1AB95AF04BF0FBC403BDA /* Kobeios */ = {
 			isa = PBXGroup;
 			children = (
 				41B299895192EC9170C661CA17B129AE /* Classes */,
 			);
-			name = Kobeios;
 			path = Kobeios;
 			sourceTree = "<group>";
 		};
@@ -118,9 +154,10 @@
 		41B299895192EC9170C661CA17B129AE /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				B6A7502A9D6D5963CD1D35F469F3789C /* ReplaceMe.swift */,
+				114865C81F58F526004F3E10 /* Extension */,
+				114865C11F58EDE7004F3E10 /* Trait */,
+				114865BE1F58ED2F004F3E10 /* Common */,
 			);
-			name = Classes;
 			path = Classes;
 			sourceTree = "<group>";
 		};
@@ -314,6 +351,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					56AE3B373931EFEE2B7C330FF56B2EB5 = {
+						LastSwiftMigration = 0830;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -356,7 +398,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A555560667E68B16F9F0D01B31DA8E60 /* Kobeios-dummy.m in Sources */,
-				D2E8F816104FCDD466BBEB4AD590404C /* ReplaceMe.swift in Sources */,
+				114865C51F58F310004F3E10 /* KobeUIVIewExtension.swift in Sources */,
+				114865CC1F58F67A004F3E10 /* KobeUIColorExtension.swift in Sources */,
+				114865C71F58F4D7004F3E10 /* KobeUIViewControllerExtension.swift in Sources */,
+				114865CA1F58F585004F3E10 /* KobeKeyboardable.swift in Sources */,
+				114865C01F58ED4A004F3E10 /* KobeDynamic.swift in Sources */,
+				114865C31F58EE65004F3E10 /* KobeStringable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,6 +507,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C1BF6C79FCA8B66C02A28A01936ADBC9 /* Kobeios.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -651,6 +699,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C1BF6C79FCA8B66C02A28A01936ADBC9 /* Kobeios.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";

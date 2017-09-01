@@ -22,7 +22,7 @@ pod "Kobeios"
 
 ## Author
 
-rodrigo.freita@kobe.io, rodrigo.freita@kobe.io
+rodrigo.freita@kobe.io
 
 ## License
 

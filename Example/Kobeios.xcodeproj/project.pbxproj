@@ -45,7 +45,7 @@
 		C51B47F2B3924E377CE9AD50 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		D43888AF51FD2A3DACF81CA7 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		E37D982193435B007B876EC8 /* Pods_Kobeios_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kobeios_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FCC6ACCE701B1C0060393C0D /* Kobeios.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Kobeios.podspec; path = ../Kobeios.podspec; sourceTree = "<group>"; };
+		FCC6ACCE701B1C0060393C0D /* Kobeios.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Kobeios.podspec; path = ../Kobeios.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		FFDD0A3142B17AF1524630E1 /* Pods_Kobeios_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kobeios_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 

@@ -9,13 +9,13 @@
 import Foundation
 
 /// Keyboardable protocol was develop to control the keyboard and the textfield that was hit by the user
-public protocol KobeKeyboardable {
+public protocol Keyboardable {
     
     var scrollView: UIScrollView? { get }
     
 }
 
-public extension KobeKeyboardable where Self: UIViewController {
+public extension Keyboardable where Self: UIViewController {
     
     func registerForKeyboardNotifications() {
         _ = NotificationCenter.default.addObserver(forName: NSNotification.Name.UIKeyboardWillShow, object: nil, queue: nil) { [weak self] (notification) in

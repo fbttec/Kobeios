@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		01BA5837EEC99063FB4E4673A32CEA35 /* Pods-Kobeios_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EAA8475C128A6BDD8EE4EB2760FDEC5 /* Pods-Kobeios_Example-dummy.m */; };
-		114865C01F58ED4A004F3E10 /* KobeDynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114865BF1F58ED4A004F3E10 /* KobeDynamic.swift */; };
-		114865C31F58EE65004F3E10 /* KobeStringable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114865C21F58EE65004F3E10 /* KobeStringable.swift */; };
-		114865C51F58F310004F3E10 /* KobeUIVIewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114865C41F58F310004F3E10 /* KobeUIVIewExtension.swift */; };
-		114865C71F58F4D7004F3E10 /* KobeUIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114865C61F58F4D7004F3E10 /* KobeUIViewControllerExtension.swift */; };
-		114865CA1F58F585004F3E10 /* KobeKeyboardable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114865C91F58F585004F3E10 /* KobeKeyboardable.swift */; };
-		114865CC1F58F67A004F3E10 /* KobeUIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114865CB1F58F67A004F3E10 /* KobeUIColorExtension.swift */; };
+		114865C01F58ED4A004F3E10 /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114865BF1F58ED4A004F3E10 /* Dynamic.swift */; };
+		114865C31F58EE65004F3E10 /* Stringable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114865C21F58EE65004F3E10 /* Stringable.swift */; };
+		114865C51F58F310004F3E10 /* UIVIewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114865C41F58F310004F3E10 /* UIVIewExtension.swift */; };
+		114865C71F58F4D7004F3E10 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114865C61F58F4D7004F3E10 /* UIViewControllerExtension.swift */; };
+		114865CA1F58F585004F3E10 /* Keyboardable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114865C91F58F585004F3E10 /* Keyboardable.swift */; };
+		114865CC1F58F67A004F3E10 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114865CB1F58F67A004F3E10 /* UIColorExtension.swift */; };
 		1BE7D195C509A98C27C4C621821C1133 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		2D5118F3302C32B3AB7796C84A4B6F67 /* Pods-Kobeios_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E657781B337B0C7C31FC14686936A95D /* Pods-Kobeios_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3CAB8C25B850AF719EAE437AA109A82A /* Pods-Kobeios_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 77C0E9C2788291A642705A25B9CECF65 /* Pods-Kobeios_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -35,12 +35,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		114865BF1F58ED4A004F3E10 /* KobeDynamic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KobeDynamic.swift; sourceTree = "<group>"; };
-		114865C21F58EE65004F3E10 /* KobeStringable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KobeStringable.swift; sourceTree = "<group>"; };
-		114865C41F58F310004F3E10 /* KobeUIVIewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KobeUIVIewExtension.swift; sourceTree = "<group>"; };
-		114865C61F58F4D7004F3E10 /* KobeUIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KobeUIViewControllerExtension.swift; sourceTree = "<group>"; };
-		114865C91F58F585004F3E10 /* KobeKeyboardable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KobeKeyboardable.swift; sourceTree = "<group>"; };
-		114865CB1F58F67A004F3E10 /* KobeUIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KobeUIColorExtension.swift; sourceTree = "<group>"; };
+		114865BF1F58ED4A004F3E10 /* Dynamic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
+		114865C21F58EE65004F3E10 /* Stringable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stringable.swift; sourceTree = "<group>"; };
+		114865C41F58F310004F3E10 /* UIVIewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIVIewExtension.swift; sourceTree = "<group>"; };
+		114865C61F58F4D7004F3E10 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		114865C91F58F585004F3E10 /* Keyboardable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keyboardable.swift; sourceTree = "<group>"; };
+		114865CB1F58F67A004F3E10 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		130D32F5A68EA8DE929C28B059F21B6F /* Pods-Kobeios_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Kobeios_Tests-resources.sh"; sourceTree = "<group>"; };
 		1CC430D40D4BC1F4D82346D27AC063CE /* Pods-Kobeios_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Kobeios_Example-frameworks.sh"; sourceTree = "<group>"; };
 		29D0C235B0B6BBA8FA85BE8A1E1C8074 /* Kobeios-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Kobeios-prefix.pch"; sourceTree = "<group>"; };
@@ -102,33 +102,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		114865BE1F58ED2F004F3E10 /* Common */ = {
-			isa = PBXGroup;
-			children = (
-				114865BF1F58ED4A004F3E10 /* KobeDynamic.swift */,
-			);
-			name = Common;
-			sourceTree = "<group>";
-		};
-		114865C11F58EDE7004F3E10 /* Trait */ = {
-			isa = PBXGroup;
-			children = (
-				114865C21F58EE65004F3E10 /* KobeStringable.swift */,
-				114865C91F58F585004F3E10 /* KobeKeyboardable.swift */,
-			);
-			name = Trait;
-			sourceTree = "<group>";
-		};
-		114865C81F58F526004F3E10 /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-				114865C41F58F310004F3E10 /* KobeUIVIewExtension.swift */,
-				114865C61F58F4D7004F3E10 /* KobeUIViewControllerExtension.swift */,
-				114865CB1F58F67A004F3E10 /* KobeUIColorExtension.swift */,
-			);
-			name = Extension;
-			sourceTree = "<group>";
-		};
 		11D067DB03B1AB95AF04BF0FBC403BDA /* Kobeios */ = {
 			isa = PBXGroup;
 			children = (
@@ -154,9 +127,9 @@
 		41B299895192EC9170C661CA17B129AE /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				114865C81F58F526004F3E10 /* Extension */,
-				114865C11F58EDE7004F3E10 /* Trait */,
-				114865BE1F58ED2F004F3E10 /* Common */,
+				E99BEFAD20DAA74E006CF591 /* Trait */,
+				E99BEFAF20DAA75F006CF591 /* Common */,
+				E99BEFAC20DAA740006CF591 /* Extension */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -259,6 +232,33 @@
 				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		E99BEFAC20DAA740006CF591 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				114865C41F58F310004F3E10 /* UIVIewExtension.swift */,
+				114865C61F58F4D7004F3E10 /* UIViewControllerExtension.swift */,
+				114865CB1F58F67A004F3E10 /* UIColorExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		E99BEFAD20DAA74E006CF591 /* Trait */ = {
+			isa = PBXGroup;
+			children = (
+				114865C21F58EE65004F3E10 /* Stringable.swift */,
+				114865C91F58F585004F3E10 /* Keyboardable.swift */,
+			);
+			path = Trait;
+			sourceTree = "<group>";
+		};
+		E99BEFAF20DAA75F006CF591 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				114865BF1F58ED4A004F3E10 /* Dynamic.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -398,12 +398,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A555560667E68B16F9F0D01B31DA8E60 /* Kobeios-dummy.m in Sources */,
-				114865C51F58F310004F3E10 /* KobeUIVIewExtension.swift in Sources */,
-				114865CC1F58F67A004F3E10 /* KobeUIColorExtension.swift in Sources */,
-				114865C71F58F4D7004F3E10 /* KobeUIViewControllerExtension.swift in Sources */,
-				114865CA1F58F585004F3E10 /* KobeKeyboardable.swift in Sources */,
-				114865C01F58ED4A004F3E10 /* KobeDynamic.swift in Sources */,
-				114865C31F58EE65004F3E10 /* KobeStringable.swift in Sources */,
+				114865C51F58F310004F3E10 /* UIVIewExtension.swift in Sources */,
+				114865CC1F58F67A004F3E10 /* UIColorExtension.swift in Sources */,
+				114865C71F58F4D7004F3E10 /* UIViewControllerExtension.swift in Sources */,
+				114865CA1F58F585004F3E10 /* Keyboardable.swift in Sources */,
+				114865C01F58ED4A004F3E10 /* Dynamic.swift in Sources */,
+				114865C31F58EE65004F3E10 /* Stringable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

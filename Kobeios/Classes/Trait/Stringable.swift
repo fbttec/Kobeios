@@ -8,17 +8,17 @@
 
 import Foundation
 
-public protocol KobeStringable {}
+public protocol Stringable {}
 
-public extension KobeStringable {
+public extension Stringable {
     
-    func kbIsValidEmail(email: String) -> Bool {
+    func isValidEmail(email: String) -> Bool {
         let emailRegex = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}"
         let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegex)
         return emailTest.evaluate(with: email)
     }
     
-    func kbIsPasswordValid(password: String) -> Bool {
+    func isPasswordValid(password: String) -> Bool {
         return password.count >= 5
     }
     

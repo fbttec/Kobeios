@@ -19,7 +19,7 @@ public extension KobeStringable {
     }
     
     func kbIsPasswordValid(password: String) -> Bool {
-        return password.characters.count >= 5
+        return password.count >= 5
     }
     
 }

@@ -32,8 +32,8 @@ public extension UIView {
     
     func roundCornerColor(borderColor: UIColor = .clear, borderWidth: CGFloat = 0, radius: CGFloat) {
         layer.cornerRadius = radius
-//        layer.borderColor = borderColor.cgColor
-//        layer.borderWidth = borderWidth
+        layer.borderColor = borderColor.cgColor
+        layer.borderWidth = borderWidth
         clipsToBounds = true
     }
     

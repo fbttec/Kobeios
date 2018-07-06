@@ -77,6 +77,7 @@ public class TextfieldLabeled: UITextField {
         label?.textAlignment = .right
         label?.minimumScaleFactor = 0.5
         label?.lineBreakMode = .byTruncatingHead
+        label?.font = UIFont(name: (self.font?.fontName)!, size: 12)        
         label?.text = labelText
         label?.isHidden = false
         label?.alpha = labelHidden ? 0 : 1

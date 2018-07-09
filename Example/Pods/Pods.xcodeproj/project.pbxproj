@@ -11,7 +11,7 @@
 		114865C01F58ED4A004F3E10 /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114865BF1F58ED4A004F3E10 /* Dynamic.swift */; };
 		114865C31F58EE65004F3E10 /* Stringable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114865C21F58EE65004F3E10 /* Stringable.swift */; };
 		114865C51F58F310004F3E10 /* UIVIewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114865C41F58F310004F3E10 /* UIVIewExtension.swift */; };
-		114865C71F58F4D7004F3E10 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114865C61F58F4D7004F3E10 /* UIViewControllerExtension.swift */; };
+		114865C71F58F4D7004F3E10 /* AlertExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114865C61F58F4D7004F3E10 /* AlertExtension.swift */; };
 		114865CA1F58F585004F3E10 /* Keyboardable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114865C91F58F585004F3E10 /* Keyboardable.swift */; };
 		114865CC1F58F67A004F3E10 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114865CB1F58F67A004F3E10 /* UIColorExtension.swift */; };
 		1BE7D195C509A98C27C4C621821C1133 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
@@ -22,6 +22,7 @@
 		CEEC887D905476C843D1CCA2ED1B3795 /* Pods-Kobeios_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A7C4A2881C0C648D157079AE3AC3FD5 /* Pods-Kobeios_Tests-dummy.m */; };
 		D4E0AEE98194E22C24ECBDBF7AAD3A93 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		E9114BF620EEA20C00CF5BBC /* TextfieldLabeled.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9114BF520EEA20C00CF5BBC /* TextfieldLabeled.swift */; };
+		E95DFE2D20F3E7B300A8B44E /* StringMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95DFE2C20F3E7B300A8B44E /* StringMessages.swift */; };
 		FF0282C7C0220A1733510030FD6DBE80 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,7 +40,7 @@
 		114865BF1F58ED4A004F3E10 /* Dynamic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
 		114865C21F58EE65004F3E10 /* Stringable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stringable.swift; sourceTree = "<group>"; };
 		114865C41F58F310004F3E10 /* UIVIewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIVIewExtension.swift; sourceTree = "<group>"; };
-		114865C61F58F4D7004F3E10 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		114865C61F58F4D7004F3E10 /* AlertExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertExtension.swift; sourceTree = "<group>"; };
 		114865C91F58F585004F3E10 /* Keyboardable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keyboardable.swift; sourceTree = "<group>"; };
 		114865CB1F58F67A004F3E10 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		130D32F5A68EA8DE929C28B059F21B6F /* Pods-Kobeios_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Kobeios_Tests-resources.sh"; sourceTree = "<group>"; };
@@ -73,6 +74,7 @@
 		DECCCD724AA8B8C76AFBB96B111D35B0 /* Pods-Kobeios_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Kobeios_Example.release.xcconfig"; sourceTree = "<group>"; };
 		E657781B337B0C7C31FC14686936A95D /* Pods-Kobeios_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Kobeios_Tests-umbrella.h"; sourceTree = "<group>"; };
 		E9114BF520EEA20C00CF5BBC /* TextfieldLabeled.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextfieldLabeled.swift; sourceTree = "<group>"; };
+		E95DFE2C20F3E7B300A8B44E /* StringMessages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringMessages.swift; sourceTree = "<group>"; };
 		EEC061CD11360B6F1FD7FD68611D05A2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -249,7 +251,7 @@
 			isa = PBXGroup;
 			children = (
 				114865C41F58F310004F3E10 /* UIVIewExtension.swift */,
-				114865C61F58F4D7004F3E10 /* UIViewControllerExtension.swift */,
+				114865C61F58F4D7004F3E10 /* AlertExtension.swift */,
 				114865CB1F58F67A004F3E10 /* UIColorExtension.swift */,
 			);
 			path = Extension;
@@ -268,6 +270,7 @@
 			isa = PBXGroup;
 			children = (
 				114865BF1F58ED4A004F3E10 /* Dynamic.swift */,
+				E95DFE2C20F3E7B300A8B44E /* StringMessages.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -412,9 +415,10 @@
 				114865C51F58F310004F3E10 /* UIVIewExtension.swift in Sources */,
 				114865CC1F58F67A004F3E10 /* UIColorExtension.swift in Sources */,
 				E9114BF620EEA20C00CF5BBC /* TextfieldLabeled.swift in Sources */,
-				114865C71F58F4D7004F3E10 /* UIViewControllerExtension.swift in Sources */,
+				114865C71F58F4D7004F3E10 /* AlertExtension.swift in Sources */,
 				114865CA1F58F585004F3E10 /* Keyboardable.swift in Sources */,
 				114865C01F58ED4A004F3E10 /* Dynamic.swift in Sources */,
+				E95DFE2D20F3E7B300A8B44E /* StringMessages.swift in Sources */,
 				114865C31F58EE65004F3E10 /* Stringable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

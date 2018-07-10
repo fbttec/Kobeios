@@ -8,6 +8,6 @@
 import Foundation
 
 public struct StringMessages {
-    static var okButton = "Ok"
-    static var cancelButton = "Cancel"
+    public static var okButton = "Ok"
+    public static var cancelButton = "Cancel"
 }

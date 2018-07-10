@@ -35,6 +35,6 @@ Basic logic that we reapeat every day :)
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
     s.dependency 'R.swift'
-    s.dependency 'NVActivityIndicatorView'    
+    s.dependency 'Kingfisher'
 
 end

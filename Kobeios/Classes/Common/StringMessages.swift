@@ -10,4 +10,6 @@ import Foundation
 public struct StringMessages {
     public static var okButton = "Ok"
     public static var cancelButton = "Cancel"
+    public static var takePhoto = "Take Photo"
+    public static var choosePhoto = "Choose Photo"
 }

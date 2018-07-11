@@ -1,22 +1,35 @@
 {
   "name": "Kobeios",
   "version": "0.1.0",
-  "summary": "A short description of Kobeios.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/rodrigo.freitas.leite@gmail.com/Kobeios",
+  "summary": "A Kobe library to implement default logic",
+  "description": "Basic logic that we reapeat every day :)",
+  "homepage": "https://github.com/fbttec/Kobeios.git",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "rodrigo.freitas.leite@gmail.com": "rodrigo.freitas.leite@gmail.com"
+    "rodrigo.freitas@kobe.io": "rodrigo.freitas@kobe.io"
   },
   "source": {
-    "git": "https://github.com/rodrigo.freitas.leite@gmail.com/Kobeios.git",
+    "git": "https://github.com/fbttec/Kobeios.git",
     "tag": "0.1.0"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "10.0"
   },
-  "source_files": "Kobeios/Classes/**/*"
+  "source_files": "Kobeios/Classes/**/*",
+  "resource_bundles": {
+    "Kobeios": [
+      "Kobeios/Assets/*.png"
+    ]
+  },
+  "dependencies": {
+    "R.swift": [
+
+    ],
+    "NVActivityIndicatorView": [
+
+    ]
+  }
 }

@@ -21,8 +21,23 @@ public class PickerImageController: UIViewController, UINavigationControllerDele
     
     public var imageClosure: ((_ image: UIImage?) -> Void)? // Each time a image is selected by the user, it should call this closure to retrieve the photo
     
+    public init() {
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required public init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
+    
+    override public func viewDidLoad() {
+        super.viewDidLoad()
+        view.backgroundColor = .clear
+        view.isOpaque = false
+    }
+    
     /// Display the ActionSheet to choose the photo or the album
-    func displayActionSheetPhotoPicker() {
+    public func displayActionSheetPhotoPicker() {
+        
         let alertController = UIAlertController(title: nil,
                                                 message: nil,
                                                 preferredStyle: .actionSheet)
@@ -40,9 +55,13 @@ public class PickerImageController: UIViewController, UINavigationControllerDele
                 self.present(picker, animated: true, completion: nil)
             }
         }
-        let cancelAction = UIAlertAction(title: StringMessages.cancelButton, style: .cancel, handler: nil)
+        let cancelAction = UIAlertAction(title: StringMessages.cancelButton, style: .cancel, handler: { _ in
+            self.dismiss(animated: true, completion: nil)
+        })
         alertController.addAction(photoAction)
         alertController.addAction(albumAction)
+        alertController.addAction(cancelAction)
+        
         self.present(alertController, animated: true, completion: nil)
     }
 
@@ -51,7 +70,9 @@ public class PickerImageController: UIViewController, UINavigationControllerDele
 extension PickerImageController: UIImagePickerControllerDelegate {
     
     public func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
-        picker.dismiss(animated: true, completion: nil)
+        picker.dismiss(animated: true) {
+            self.dismiss(animated: true, completion: nil)
+        }
     }
     
     public func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
@@ -62,7 +83,9 @@ extension PickerImageController: UIImagePickerControllerDelegate {
                closure(image)
             }
         }
-        picker.dismiss(animated: true, completion: nil)
+        picker.dismiss(animated: true) {
+            self.dismiss(animated: true, completion: nil)
+        }
     }
     
 }

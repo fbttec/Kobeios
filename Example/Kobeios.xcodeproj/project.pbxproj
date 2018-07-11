@@ -15,6 +15,7 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		9D4F3D2FE106FE3CF55BCA2E /* Pods_Kobeios_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFDD0A3142B17AF1524630E1 /* Pods_Kobeios_Tests.framework */; };
+		E9862CD720F427C700862FD1 /* profilepic-4.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = E9862CD620F427C600862FD1 /* profilepic-4.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		C51B47F2B3924E377CE9AD50 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		D43888AF51FD2A3DACF81CA7 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		E37D982193435B007B876EC8 /* Pods_Kobeios_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kobeios_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9862CD620F427C600862FD1 /* profilepic-4.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "profilepic-4.jpeg"; sourceTree = "<group>"; };
 		FCC6ACCE701B1C0060393C0D /* Kobeios.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Kobeios.podspec; path = ../Kobeios.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		FFDD0A3142B17AF1524630E1 /* Pods_Kobeios_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kobeios_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -106,6 +108,7 @@
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
+				E9862CD620F427C600862FD1 /* profilepic-4.jpeg */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 			);
@@ -215,10 +218,12 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = W9C5RFHWCR;
 						LastSwiftMigration = 0940;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 8G2T5F2Y9Q;
 						LastSwiftMigration = 0940;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -251,6 +256,7 @@
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
+				E9862CD720F427C700862FD1 /* profilepic-4.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -512,7 +518,9 @@
 			baseConfigurationReference = 1904EC7F800C0DCB9BFB3FF3 /* Pods-Kobeios_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = W9C5RFHWCR;
 				INFOPLIST_FILE = Kobeios/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -527,7 +535,9 @@
 			baseConfigurationReference = 2FD836B7AFBD307B1D7FDBB7 /* Pods-Kobeios_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = W9C5RFHWCR;
 				INFOPLIST_FILE = Kobeios/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -541,6 +551,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 62F3C766E8120CAF22A3008D /* Pods-Kobeios_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 8G2T5F2Y9Q;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -562,6 +573,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1DC930FBE53D43DA3018B1EE /* Pods-Kobeios_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 8G2T5F2Y9Q;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",

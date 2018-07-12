@@ -29,7 +29,7 @@ public class TextfieldLabeled: UITextField {
     }
     
     @IBInspectable
-    public var labelColor: UIColor = UIColor.clear {
+    public var labelColor: UIColor = UIColor.red {
         didSet {
             label?.textColor = labelColor
         }
@@ -62,7 +62,7 @@ public class TextfieldLabeled: UITextField {
         }
         underline?.backgroundColor = labelHidden ? underlineColor : labelColor
         underline?.frame = CGRect(x: 0,
-                                 y: frame.size.height - 1,
+                                 y: frame.size.height + 7,
                                  width: frame.size.width, height: 1)
         self.addSubview(underline!)
     }
@@ -72,7 +72,7 @@ public class TextfieldLabeled: UITextField {
             label = UILabel()
         }
         label?.frame = CGRect.init(origin: CGPoint(x: frame.origin.x,
-                                                   y: frame.origin.y + frame.size.height),
+                                                   y: frame.origin.y + frame.size.height + 7),
                                    size: CGSize(width: frame.size.width, height: frame.size.height))
         label?.textAlignment = .right
         label?.minimumScaleFactor = 0.5
@@ -80,6 +80,7 @@ public class TextfieldLabeled: UITextField {
         label?.font = UIFont(name: (self.font?.fontName)!, size: 12)        
         label?.text = labelText
         label?.isHidden = false
+        label?.textColor = labelColor
         label?.alpha = labelHidden ? 0 : 1
         self.superview?.addSubview(label!)
     }

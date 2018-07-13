@@ -48,10 +48,15 @@ public extension Keyboardable where Self: UIViewController {
     }
     
     func keyboardWillBeHidden(notification: Notification) {
-        let contentInsets: UIEdgeInsets = UIEdgeInsets(top: 0.0, left: 0.0, bottom: 0.0, right: 0.0)
-        scrollView?.contentInset = contentInsets
-        scrollView?.scrollIndicatorInsets = contentInsets
+        if let info = notification.userInfo as NSDictionary?,
+            let size = (info[UIKeyboardFrameEndUserInfoKey] as? NSValue) {
+             let keyboardSize = size.cgRectValue.size
+            let contentInsets: UIEdgeInsets = UIEdgeInsets(top: 0.0, left: 0.0, bottom: -keyboardSize.height, right: 0.0)
+            scrollView?.contentInset = contentInsets
+            scrollView?.scrollIndicatorInsets = contentInsets
+            scrollView.isScrollEnabled = false
         self.view.endEditing(true)
+        }
     }
     
     private func findActiveTextField (subviews: [UIView], textField: inout UITextField?) {

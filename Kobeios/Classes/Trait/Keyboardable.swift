@@ -11,7 +11,6 @@ import Foundation
 /// Keyboardable protocol was develop to control the keyboard and the textfield that was hit by the user
 public protocol Keyboardable {
     var scrollView: UIScrollView! { get }
-
 }
 
 public extension Keyboardable where Self: UIViewController {
@@ -33,22 +32,17 @@ public extension Keyboardable where Self: UIViewController {
     
     func keyboardWasShown(notification: Notification) {
         if let info = notification.userInfo as NSDictionary?,
-            let size = (info[UIKeyboardFrameBeginUserInfoKey] as? NSValue) {
+            let size = (info[UIKeyboardFrameEndUserInfoKey] as? NSValue) {
             
-            scrollView?.isScrollEnabled = true
+            scrollView.isScrollEnabled = true
             let keyboardSize = size.cgRectValue.size
-            let contentInsets = UIEdgeInsets(top: 0.0, left: 0.0, bottom: keyboardSize.height + 50, right: 0.0)
-            scrollView?.contentInset = contentInsets
-            scrollView?.scrollIndicatorInsets = contentInsets
-            var rect = self.view.frame
-            rect.size.height -= keyboardSize.height
+            let contentInsets = UIEdgeInsets(top: 0.0, left: 0.0, bottom: keyboardSize.height, right: 0.0)
+            scrollView.contentInset = contentInsets
+            scrollView.scrollIndicatorInsets = contentInsets
             var textField: UITextField?
             findActiveTextField(subviews: view.subviews, textField: &textField)
             if let textField = textField {
-                let point = CGPoint(x: 0, y: textField.frame.origin.y + 40)
-                scrollView?.setContentOffset(point, animated: true)
-                if  !rect.contains((textField.frame)) {
-                }
+                scrollView.scrollRectToVisible(textField.frame, animated: true)
             }
         }
     }

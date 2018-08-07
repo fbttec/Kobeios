@@ -22,7 +22,11 @@
 		CEEC887D905476C843D1CCA2ED1B3795 /* Pods-Kobeios_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A7C4A2881C0C648D157079AE3AC3FD5 /* Pods-Kobeios_Tests-dummy.m */; };
 		D4E0AEE98194E22C24ECBDBF7AAD3A93 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		E9114BF620EEA20C00CF5BBC /* TextfieldLabeled.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9114BF520EEA20C00CF5BBC /* TextfieldLabeled.swift */; };
+		E94D01BF2118BCCD00EEAEF5 /* LayoutExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94D01BE2118BCCD00EEAEF5 /* LayoutExtensions.swift */; };
 		E95DFE2D20F3E7B300A8B44E /* StringMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95DFE2C20F3E7B300A8B44E /* StringMessages.swift */; };
+		E99397512111030800504915 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99397502111030800504915 /* UIButtonExtension.swift */; };
+		E9BBB242210982C80020CD85 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BBB241210982C80020CD85 /* StringExtension.swift */; };
+		E9BBB244210A3AE30020CD85 /* UICellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BBB243210A3AE30020CD85 /* UICellDelegate.swift */; };
 		FF0282C7C0220A1733510030FD6DBE80 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
@@ -74,7 +78,11 @@
 		DECCCD724AA8B8C76AFBB96B111D35B0 /* Pods-Kobeios_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Kobeios_Example.release.xcconfig"; sourceTree = "<group>"; };
 		E657781B337B0C7C31FC14686936A95D /* Pods-Kobeios_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Kobeios_Tests-umbrella.h"; sourceTree = "<group>"; };
 		E9114BF520EEA20C00CF5BBC /* TextfieldLabeled.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextfieldLabeled.swift; sourceTree = "<group>"; };
+		E94D01BE2118BCCD00EEAEF5 /* LayoutExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutExtensions.swift; sourceTree = "<group>"; };
 		E95DFE2C20F3E7B300A8B44E /* StringMessages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringMessages.swift; sourceTree = "<group>"; };
+		E99397502111030800504915 /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
+		E9BBB241210982C80020CD85 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		E9BBB243210A3AE30020CD85 /* UICellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICellDelegate.swift; sourceTree = "<group>"; };
 		EEC061CD11360B6F1FD7FD68611D05A2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -243,6 +251,7 @@
 			isa = PBXGroup;
 			children = (
 				E9114BF520EEA20C00CF5BBC /* TextfieldLabeled.swift */,
+				E9BBB243210A3AE30020CD85 /* UICellDelegate.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -253,6 +262,9 @@
 				114865C41F58F310004F3E10 /* UIVIewExtension.swift */,
 				114865C61F58F4D7004F3E10 /* AlertExtension.swift */,
 				114865CB1F58F67A004F3E10 /* UIColorExtension.swift */,
+				E9BBB241210982C80020CD85 /* StringExtension.swift */,
+				E99397502111030800504915 /* UIButtonExtension.swift */,
+				E94D01BE2118BCCD00EEAEF5 /* LayoutExtensions.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -413,7 +425,11 @@
 			files = (
 				A555560667E68B16F9F0D01B31DA8E60 /* Kobeios-dummy.m in Sources */,
 				114865C51F58F310004F3E10 /* UIVIewExtension.swift in Sources */,
+				E94D01BF2118BCCD00EEAEF5 /* LayoutExtensions.swift in Sources */,
+				E9BBB244210A3AE30020CD85 /* UICellDelegate.swift in Sources */,
+				E9BBB242210982C80020CD85 /* StringExtension.swift in Sources */,
 				114865CC1F58F67A004F3E10 /* UIColorExtension.swift in Sources */,
+				E99397512111030800504915 /* UIButtonExtension.swift in Sources */,
 				E9114BF620EEA20C00CF5BBC /* TextfieldLabeled.swift in Sources */,
 				114865C71F58F4D7004F3E10 /* AlertExtension.swift in Sources */,
 				114865CA1F58F585004F3E10 /* Keyboardable.swift in Sources */,

@@ -8,6 +8,7 @@
 
 import UIKit
 
+@IBDesignable 
 public extension UIView {
     
     func roundCorners(_ corners: UIRectCorner, radius: CGFloat) {
@@ -60,6 +61,33 @@ public extension UIView {
             } else {
                 layer.cornerRadius = 0
             }
+        }
+    }
+    
+    @IBInspectable var cornerRadius: CGFloat {
+        get {
+            return self.layer.cornerRadius
+        }
+        set {
+            layer.cornerRadius = newValue
+        }
+    }
+    
+    @IBInspectable var borderWidth: CGFloat {
+        get {
+            return self.layer.borderWidth
+        }
+        set {
+            layer.borderWidth = newValue
+        }
+    }
+    
+    @IBInspectable var borderColor: UIColor {
+        get {
+            return UIColor(cgColor: self.layer.borderColor ?? UIColor.clear.cgColor)
+        }
+        set {
+            layer.borderColor = newValue.cgColor
         }
     }
     

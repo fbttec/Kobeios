@@ -11,33 +11,6 @@ import UIKit
 @IBDesignable 
 public extension UIView {
     
-    func roundCorners(_ corners: UIRectCorner, radius: CGFloat) {
-        let path = UIBezierPath(roundedRect: self.bounds, byRoundingCorners: corners, cornerRadii: CGSize(width: radius, height: radius))
-        let mask = CAShapeLayer()
-        mask.path = path.cgPath
-        self.layer.mask = mask
-    }
-    
-    func roundCorners(corners:UIRectCorner, radius: CGFloat) {
-        let maskLayer = CAShapeLayer()
-        maskLayer.path = UIBezierPath(roundedRect: bounds, byRoundingCorners: corners, cornerRadii: CGSize(width: radius, height: radius)).cgPath
-        layer.mask = maskLayer
-    }
-    
-    func roundCorners(corners:UIRectCorner, radius: CGFloat, roundedRect: CGRect)
-    {
-        let maskLayer = CAShapeLayer()
-        maskLayer.path = UIBezierPath(roundedRect: roundedRect, byRoundingCorners: corners, cornerRadii: CGSize(width: radius, height: radius)).cgPath
-        layer.mask = maskLayer
-    }
-    
-    func roundCornerColor(borderColor: UIColor = .clear, borderWidth: CGFloat = 0, radius: CGFloat) {
-        layer.cornerRadius = radius
-        layer.borderColor = borderColor.cgColor
-        layer.borderWidth = borderWidth
-        clipsToBounds = true
-    }
-    
     @IBInspectable var circularCorner: Bool {
         get {
             return self.circularCorner
@@ -91,36 +64,96 @@ public extension UIView {
         }
     }
     
-    func addShadow(opacity: Float = 1, shadowRadius: CGFloat = 7, cornerRadius: CGFloat = 5, corners: CACornerMask = [.layerMinXMinYCorner, .layerMaxXMinYCorner, .layerMinXMaxYCorner, .layerMaxXMaxYCorner]) {
-        backgroundColor = UIColor.white
-        layer.shadowOffset = CGSize.zero
-        layer.shadowColor = UIColor(red:0, green:0, blue:0, alpha:0.1).cgColor
-        layer.shadowOpacity = opacity
-        layer.shadowRadius = shadowRadius
-        layer.cornerRadius = cornerRadius
-        if #available(iOS 11.0, *) {
-            layer.maskedCorners = corners
+    @IBInspectable var dropShadow: Bool {
+        get {
+            return self.dropShadow
+        }
+        set {
+            if newValue == true {
+                addDefaultShadow()
+            } else {
+                removeShadow()
+            }
         }
     }
     
+    @IBInspectable var shadowColor: UIColor {
+        get {
+            return UIColor(cgColor: self.layer.shadowColor ?? UIColor.black.cgColor)
+        }
+        set {
+            layer.shadowColor = newValue.cgColor
+        }
+    }
+    
+    @IBInspectable var shadowRadius: CGFloat {
+        get {
+            return layer.shadowRadius
+        }
+        set {
+            layer.shadowRadius = newValue
+        }
+    }
+    
+    @IBInspectable var shadowOpacity: Float {
+        get {
+            return layer.shadowOpacity
+        }
+        set {
+            layer.shadowOpacity = newValue
+        }
+    }
+    
+    @IBInspectable var shadowXOffset: CGFloat {
+        get {
+            return layer.shadowOffset.width
+        }
+        set {
+            layer.shadowOffset = CGSize(width: newValue, height: shadowYOffset)
+        }
+    }
+    
+    @IBInspectable var shadowYOffset: CGFloat {
+        get {
+            return layer.shadowOffset.height
+        }
+        set {
+            layer.shadowOffset = CGSize(width: shadowXOffset, height: newValue)
+        }
+    }
+    
+    
+    func addDefaultShadow() {
+        dropShadow(offsetX: 0, offsetY: 0, color: UIColor.black, opacity: 0.3, radius: 10)
+    }
+    
+    func removeShadow() {
+         dropShadow(offsetX: 0, offsetY: 0, color: UIColor.black, opacity: 0, radius: 0)
+    }
+    
+    func dropShadow(offsetX: CGFloat, offsetY: CGFloat, color: UIColor, opacity: Float, radius: CGFloat, scale: Bool = true) {
+        layer.masksToBounds = false
+        layer.shadowOffset = CGSize(width: offsetX, height: offsetY)
+        layer.shadowColor = color.cgColor
+        layer.shadowOpacity = opacity
+        layer.shadowRadius = radius
+        layer.shadowPath = UIBezierPath(rect: self.bounds).cgPath
+        layer.shouldRasterize = true
+        layer.rasterizationScale = scale ? UIScreen.main.scale : 1
+    }
+    
     func circularCorners() {
-        roundCornerColor(radius: frame.size.width/2.0)
+        roundCorner(radius: frame.size.width/2.0)
     }
     
     func roundCorners() {
-        roundCornerColor(radius: frame.size.height/2.0)
+        roundCorner(radius: frame.size.height/2.0)
     }
     
-    func roundCorners(color: UIColor) {
-        roundCornerColor(borderColor: color, borderWidth: 1.0, radius: frame.size.height/2.0)
+    func roundCorner(radius: CGFloat) {
+        layer.cornerRadius = radius
+        clipsToBounds = true
     }
     
-    func roundCorners(radius: CGFloat) {
-        roundCornerColor(borderColor: .clear, borderWidth: 1.0, radius: radius)
-    }
-    
-    func roundCornersLight() {
-        roundCornerColor(borderWidth: 1.0, radius: 6.0)
-    }
     
 }

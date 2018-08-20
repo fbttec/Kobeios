@@ -12,12 +12,9 @@ import Kobeios
 
 class ViewController: UIViewController, Stringable {
     
-    @IBOutlet weak var txtField: TextfieldLabeled!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        
+        // Do any additional setup after loading the view, typically from a nib.        
     }
         
     override func didReceiveMemoryWarning() {
@@ -26,7 +23,6 @@ class ViewController: UIViewController, Stringable {
     }
     
     @IBAction func buttonTouch(_ sender: Any) {
-        txtField.showLabel( txtField.labelHidden)
     }
     
 }

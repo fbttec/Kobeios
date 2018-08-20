@@ -62,5 +62,4 @@ class GradientView: UIView {
             layer.endPoint = CGPoint (x: 1, y: 1)
         }
     }
-
 }

@@ -29,6 +29,7 @@
 		E99397512111030800504915 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99397502111030800504915 /* UIButtonExtension.swift */; };
 		E9BBB242210982C80020CD85 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BBB241210982C80020CD85 /* StringExtension.swift */; };
 		E9BBB244210A3AE30020CD85 /* UICellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BBB243210A3AE30020CD85 /* UICellDelegate.swift */; };
+		E9C0A066213468A800B2410A /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C0A065213468A800B2410A /* UILabelExtension.swift */; };
 		E9C526252124C96D004C66E8 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C526242124C96D004C66E8 /* DateExtension.swift */; };
 		FF0282C7C0220A1733510030FD6DBE80 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 /* End PBXBuildFile section */
@@ -88,6 +89,7 @@
 		E99397502111030800504915 /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
 		E9BBB241210982C80020CD85 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		E9BBB243210A3AE30020CD85 /* UICellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICellDelegate.swift; sourceTree = "<group>"; };
+		E9C0A065213468A800B2410A /* UILabelExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelExtension.swift; sourceTree = "<group>"; };
 		E9C526242124C96D004C66E8 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 		EEC061CD11360B6F1FD7FD68611D05A2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -274,6 +276,7 @@
 				E99397502111030800504915 /* UIButtonExtension.swift */,
 				E94D01BE2118BCCD00EEAEF5 /* LayoutExtensions.swift */,
 				E9C526242124C96D004C66E8 /* DateExtension.swift */,
+				E9C0A065213468A800B2410A /* UILabelExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -434,6 +437,7 @@
 			files = (
 				E95AE7A6212B560B003DA246 /* GradientView.swift in Sources */,
 				A555560667E68B16F9F0D01B31DA8E60 /* Kobeios-dummy.m in Sources */,
+				E9C0A066213468A800B2410A /* UILabelExtension.swift in Sources */,
 				E9C526252124C96D004C66E8 /* DateExtension.swift in Sources */,
 				114865C51F58F310004F3E10 /* UIVIewExtension.swift in Sources */,
 				E94D01BF2118BCCD00EEAEF5 /* LayoutExtensions.swift in Sources */,

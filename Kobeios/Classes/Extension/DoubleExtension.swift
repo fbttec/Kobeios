@@ -12,12 +12,15 @@ extension Double {
     public static func formatPoints(num: Double) ->String{
         var thousandNum = num/1000
         var millionNum = num/1000000
-        if num >= 1000 && num < 1000000{
+        if num >= 10000 && num < 100000 {
             if(floor(thousandNum) == thousandNum){
                 return("\(Int(thousandNum))k")
             }
             return("\(thousandNum.roundToPlaces(places: 1))k")
         }
+      if num >= 100000 && num < 1000000 {
+         return("\(Int(thousandNum))k")
+      }
         if num > 1000000{
             if(floor(millionNum) == millionNum){
                 return("\(Int(thousandNum))k")

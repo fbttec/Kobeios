@@ -7,7 +7,7 @@
 
 import Foundation
 
-extension Double {
+public extension Double {
     
     public static func formatPoints(num: Double) ->String{
         var thousandNum = num/1000
@@ -40,5 +40,14 @@ extension Double {
         let divisor = pow(10.0, Double(places))
         return Darwin.round(self * divisor) / divisor
     }
+    
+    var formatCurrency: String {
+        let formatter = NumberFormatter()        
+        formatter.groupingSeparator = ","
+        formatter.numberStyle = .decimal
+        formatter.alwaysShowsDecimalSeparator = false
+        return formatter.string(for: self) ?? ""
+    }
+
 
 }

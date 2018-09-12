@@ -53,10 +53,10 @@ extension UITextView: UITextViewDelegate {
     }
     
     /// Resize the placeholder UILabel to make sure it's in the same position as the UITextView text
-    private func resizePlaceholder() {
+    public func resizePlaceholder(y: CGFloat = 0.0) {
         if let placeholderLabel = self.viewWithTag(100) as! UILabel? {
             let labelX = self.textContainerInset.left + 4
-            let labelY = self.textContainerInset.top - 2
+            let labelY = self.textContainerInset.top - 2 + y
             let labelWidth = self.frame.width - (labelX * 2)
             let labelHeight = placeholderLabel.frame.height
             

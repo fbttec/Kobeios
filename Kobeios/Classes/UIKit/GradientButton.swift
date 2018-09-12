@@ -8,7 +8,7 @@
 import UIKit
 
 @IBDesignable
-class GradientButton: UIButton {
+public class GradientButton: UIButton {
 
     public override init(frame: CGRect) {
         super.init(frame: frame)
@@ -42,7 +42,7 @@ class GradientButton: UIButton {
         }
     }
     
-    override class var layerClass: AnyClass {
+    override public class var layerClass: AnyClass {
         get {
             return CAGradientLayer.self
         }

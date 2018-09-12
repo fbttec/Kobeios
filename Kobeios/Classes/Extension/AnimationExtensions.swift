@@ -8,7 +8,7 @@
 import Foundation
 
 
-extension UIView {
+public extension UIView {
 // Usage: insert view.fadeTransition right before changing content
     func fadeTransition(_ duration:CFTimeInterval) {
         let animation = CATransition()

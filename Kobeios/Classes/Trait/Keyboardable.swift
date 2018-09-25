@@ -16,23 +16,23 @@ public protocol Keyboardable {
 public extension Keyboardable where Self: UIViewController {
     
     func registerForKeyboardNotifications() {
-        _ = NotificationCenter.default.addObserver(forName: NSNotification.Name.UIKeyboardWillShow, object: nil, queue: nil) { [weak self] (notification) in
+        _ = NotificationCenter.default.addObserver(forName: UIResponder.keyboardWillShowNotification, object: nil, queue: nil) { [weak self] (notification) in
             self?.keyboardWasShown(notification: notification)
         }
         
-        _ = NotificationCenter.default.addObserver(forName: NSNotification.Name.UIKeyboardWillHide, object: nil, queue: nil) { [weak self] (notification) in
+        _ = NotificationCenter.default.addObserver(forName: UIResponder.keyboardWillHideNotification, object: nil, queue: nil) { [weak self] (notification) in
             self?.keyboardWillBeHidden(notification: notification)
         }
     }
     
     func deregisterFromKeyboardNotifications() {
-        NotificationCenter.default.removeObserver(self, name: NSNotification.Name.UIKeyboardWillShow, object: nil)
-        NotificationCenter.default.removeObserver(self, name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
     }
     
     func keyboardWasShown(notification: Notification) {
         if let info = notification.userInfo as NSDictionary?,
-            let size = (info[UIKeyboardFrameEndUserInfoKey] as? NSValue) {
+            let size = (info[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue) {
             
             scrollView.isScrollEnabled = true
             let keyboardSize = size.cgRectValue.size

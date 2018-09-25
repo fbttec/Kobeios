@@ -21,8 +21,12 @@
 		A555560667E68B16F9F0D01B31DA8E60 /* Kobeios-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4767A136C99C34905C38B2BCC34D15F0 /* Kobeios-dummy.m */; };
 		CEEC887D905476C843D1CCA2ED1B3795 /* Pods-Kobeios_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A7C4A2881C0C648D157079AE3AC3FD5 /* Pods-Kobeios_Tests-dummy.m */; };
 		D4E0AEE98194E22C24ECBDBF7AAD3A93 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		E90C80492141A5C700919AC8 /* AnimationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90C80482141A5C700919AC8 /* AnimationExtensions.swift */; };
 		E9114BF620EEA20C00CF5BBC /* TextfieldLabeled.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9114BF520EEA20C00CF5BBC /* TextfieldLabeled.swift */; };
+		E91492FF213EE2630096074E /* UITextViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91492FE213EE2630096074E /* UITextViewExtension.swift */; };
+		E926370B21363FC1004F1306 /* UIDeviceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E926370A21363FC1004F1306 /* UIDeviceExtension.swift */; };
 		E94D01BF2118BCCD00EEAEF5 /* LayoutExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94D01BE2118BCCD00EEAEF5 /* LayoutExtensions.swift */; };
+		E955427E213E02080011753D /* IntExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E955427D213E02080011753D /* IntExtension.swift */; };
 		E95AE7A6212B560B003DA246 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95AE7A5212B560B003DA246 /* GradientView.swift */; };
 		E95AE7A8212B7220003DA246 /* GradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95AE7A7212B7220003DA246 /* GradientButton.swift */; };
 		E95DFE2D20F3E7B300A8B44E /* StringMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95DFE2C20F3E7B300A8B44E /* StringMessages.swift */; };
@@ -81,8 +85,12 @@
 		CC94B2EEDDAB0EB54D45FAB74935B89C /* Pods_Kobeios_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kobeios_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DECCCD724AA8B8C76AFBB96B111D35B0 /* Pods-Kobeios_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Kobeios_Example.release.xcconfig"; sourceTree = "<group>"; };
 		E657781B337B0C7C31FC14686936A95D /* Pods-Kobeios_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Kobeios_Tests-umbrella.h"; sourceTree = "<group>"; };
+		E90C80482141A5C700919AC8 /* AnimationExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationExtensions.swift; sourceTree = "<group>"; };
 		E9114BF520EEA20C00CF5BBC /* TextfieldLabeled.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextfieldLabeled.swift; sourceTree = "<group>"; };
+		E91492FE213EE2630096074E /* UITextViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextViewExtension.swift; sourceTree = "<group>"; };
+		E926370A21363FC1004F1306 /* UIDeviceExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDeviceExtension.swift; sourceTree = "<group>"; };
 		E94D01BE2118BCCD00EEAEF5 /* LayoutExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutExtensions.swift; sourceTree = "<group>"; };
+		E955427D213E02080011753D /* IntExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntExtension.swift; sourceTree = "<group>"; };
 		E95AE7A5212B560B003DA246 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		E95AE7A7212B7220003DA246 /* GradientButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientButton.swift; sourceTree = "<group>"; };
 		E95DFE2C20F3E7B300A8B44E /* StringMessages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringMessages.swift; sourceTree = "<group>"; };
@@ -277,6 +285,10 @@
 				E94D01BE2118BCCD00EEAEF5 /* LayoutExtensions.swift */,
 				E9C526242124C96D004C66E8 /* DateExtension.swift */,
 				E9C0A065213468A800B2410A /* UILabelExtension.swift */,
+				E926370A21363FC1004F1306 /* UIDeviceExtension.swift */,
+				E955427D213E02080011753D /* IntExtension.swift */,
+				E91492FE213EE2630096074E /* UITextViewExtension.swift */,
+				E90C80482141A5C700919AC8 /* AnimationExtensions.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -391,7 +403,7 @@
 				LastUpgradeCheck = 0940;
 				TargetAttributes = {
 					56AE3B373931EFEE2B7C330FF56B2EB5 = {
-						LastSwiftMigration = 0940;
+						LastSwiftMigration = 1000;
 					};
 				};
 			};
@@ -438,12 +450,15 @@
 				E95AE7A6212B560B003DA246 /* GradientView.swift in Sources */,
 				A555560667E68B16F9F0D01B31DA8E60 /* Kobeios-dummy.m in Sources */,
 				E9C0A066213468A800B2410A /* UILabelExtension.swift in Sources */,
+				E926370B21363FC1004F1306 /* UIDeviceExtension.swift in Sources */,
 				E9C526252124C96D004C66E8 /* DateExtension.swift in Sources */,
 				114865C51F58F310004F3E10 /* UIVIewExtension.swift in Sources */,
 				E94D01BF2118BCCD00EEAEF5 /* LayoutExtensions.swift in Sources */,
+				E90C80492141A5C700919AC8 /* AnimationExtensions.swift in Sources */,
 				E9BBB244210A3AE30020CD85 /* UICellDelegate.swift in Sources */,
 				E9BBB242210982C80020CD85 /* StringExtension.swift in Sources */,
 				114865CC1F58F67A004F3E10 /* UIColorExtension.swift in Sources */,
+				E955427E213E02080011753D /* IntExtension.swift in Sources */,
 				E99397512111030800504915 /* UIButtonExtension.swift in Sources */,
 				E95AE7A8212B7220003DA246 /* GradientButton.swift in Sources */,
 				E9114BF620EEA20C00CF5BBC /* TextfieldLabeled.swift in Sources */,
@@ -452,6 +467,7 @@
 				114865C01F58ED4A004F3E10 /* Dynamic.swift in Sources */,
 				E95DFE2D20F3E7B300A8B44E /* StringMessages.swift in Sources */,
 				114865C31F58EE65004F3E10 /* Stringable.swift in Sources */,
+				E91492FF213EE2630096074E /* UITextViewExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -521,6 +537,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
@@ -589,8 +606,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -647,6 +663,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -794,8 +811,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";

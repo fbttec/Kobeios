@@ -16,4 +16,11 @@ extension Date {
     public func hoursBetween(date: Date) -> Int {
         return Calendar.current.dateComponents([.hour], from: self, to: date).hour!
     }
+    
+    public func truncateDate() -> Date {
+        let comp: DateComponents = Calendar.current.dateComponents([.year, .month, .day], from: self)
+        let truncated = Calendar.current.date(from: comp)!
+        print("truncated real \(truncated)")
+        return truncated
+    }
 }

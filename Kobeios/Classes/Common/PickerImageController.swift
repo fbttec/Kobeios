@@ -75,8 +75,9 @@ extension PickerImageController: UIImagePickerControllerDelegate {
         }
     }
     
-    public func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
-        if let image = info[UIImagePickerControllerOriginalImage] as? UIImage {
+    func imagePickerController(_ picker: UIImagePickerController,
+                               didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        if let image = info[.originalImage] as? UIImage {
             DispatchQueue.main.async { [weak self] in
                 guard let strongSelf = self,
                     let closure = strongSelf.imageClosure else { return }

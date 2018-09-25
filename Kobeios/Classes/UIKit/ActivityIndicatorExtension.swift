@@ -27,7 +27,7 @@ extension UIViewController {
     }
     
     public func startAnimating() {
-        let activity = UIActivityIndicatorView(activityIndicatorStyle: .gray)
+        let activity = UIActivityIndicatorView(style: .gray)
         let barButton = UIBarButtonItem(customView: activity)
         activity.startAnimating()
         storedButtonItem = self.navigationItem.rightBarButtonItem

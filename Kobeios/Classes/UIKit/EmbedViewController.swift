@@ -7,12 +7,15 @@
 
 import UIKit
 
-class EmbedViewController: UIView {
+public class EmbedViewController: UIView {
     var rootViewController: UIViewController?
-    var embeddedViewController: UIViewController? {
+    public var embeddedViewController: UIViewController? {
         didSet {
             guard let rootViewController = rootViewController,
                 let embeddedViewController = embeddedViewController else { return }
+            if let viewController = oldValue {
+                remove(controller: viewController)
+            }
             rootViewController.addChild(embeddedViewController)
             embeddedViewController.view.translatesAutoresizingMaskIntoConstraints = false
             self.addSubview(embeddedViewController.view)
@@ -27,10 +30,14 @@ class EmbedViewController: UIView {
             }
 
             embeddedViewController.didMove(toParent: rootViewController)
+            embeddedViewController.view.alpha = 0
+            UIView.animate(withDuration: 0.7) {
+                embeddedViewController.view.alpha = 1
+            }
         }
     }
     
-    convenience init(rootViewController: UIViewController, locationView: UIView ) {
+    public convenience init(rootViewController: UIViewController, locationView: UIView ) {
         self.init()
         self.rootViewController = rootViewController        
         translatesAutoresizingMaskIntoConstraints = false
@@ -43,6 +50,12 @@ class EmbedViewController: UIView {
                 self.bottomAnchor.constraint(equalTo: locationView.bottomAnchor, constant: -10),
                 ])
         }
+    }
+    
+    func remove(controller: UIViewController) {
+        controller.willMove(toParent: nil)
+        controller.view.removeFromSuperview()
+        controller.removeFromParent()
     }
 
 }

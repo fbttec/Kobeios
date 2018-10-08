@@ -7,7 +7,7 @@
 import UIKit
 
 @IBDesignable
-class GradientView: UIView {
+public class GradientView: UIView {
 
     public override init(frame: CGRect) {
         super.init(frame: frame)
@@ -41,7 +41,7 @@ class GradientView: UIView {
         }
     }
     
-    override class var layerClass: AnyClass {
+    override public class var layerClass: AnyClass {
         get {
             return CAGradientLayer.self
         }

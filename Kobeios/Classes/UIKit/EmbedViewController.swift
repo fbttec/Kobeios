@@ -31,7 +31,7 @@ public class EmbedViewController: UIView {
 
             embeddedViewController.didMove(toParent: rootViewController)
             embeddedViewController.view.alpha = 0
-            UIView.animate(withDuration: 0.7) {
+            UIView.animate(withDuration: 0.4) {
                 embeddedViewController.view.alpha = 1
             }
         }
@@ -44,10 +44,10 @@ public class EmbedViewController: UIView {
         locationView.addSubview(self)
         if #available(iOS 9.0, *) {
             NSLayoutConstraint.activate([
-                self.leadingAnchor.constraint(equalTo: locationView.leadingAnchor, constant: 10),
-                self.trailingAnchor.constraint(equalTo: locationView.trailingAnchor, constant: -10),
-                self.topAnchor.constraint(equalTo: locationView.topAnchor, constant: 10),
-                self.bottomAnchor.constraint(equalTo: locationView.bottomAnchor, constant: -10),
+                self.leadingAnchor.constraint(equalTo: locationView.leadingAnchor, constant: 0),
+                self.trailingAnchor.constraint(equalTo: locationView.trailingAnchor, constant: 0),
+                self.topAnchor.constraint(equalTo: locationView.topAnchor, constant: 0),
+                self.bottomAnchor.constraint(equalTo: locationView.bottomAnchor, constant: 0),
                 ])
         }
     }

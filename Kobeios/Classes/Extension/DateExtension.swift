@@ -19,8 +19,7 @@ extension Date {
     
     public func truncateDate() -> Date {
         let comp: DateComponents = Calendar.current.dateComponents([.year, .month, .day], from: self)
-        let truncated = Calendar.current.date(from: comp)!
-        print("truncated real \(truncated)")
+        let truncated = Calendar.current.date(from: comp)!        
         return truncated
     }
 }

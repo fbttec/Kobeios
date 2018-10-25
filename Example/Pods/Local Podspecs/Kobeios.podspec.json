@@ -1,0 +1,35 @@
+{
+  "name": "Kobeios",
+  "version": "0.1.0",
+  "summary": "A Kobe library to implement default logic",
+  "description": "Basic logic that we reapeat every day :)",
+  "homepage": "https://github.com/fbttec/Kobeios.git",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "rodrigo.freitas@kobe.io": "rodrigo.freitas@kobe.io"
+  },
+  "source": {
+    "git": "https://github.com/fbttec/Kobeios.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "Kobeios/Classes/**/*",
+  "resource_bundles": {
+    "Kobeios": [
+      "Kobeios/Assets/*.png"
+    ]
+  },
+  "dependencies": {
+    "R.swift": [
+
+    ],
+    "NVActivityIndicatorView": [
+
+    ]
+  }
+}

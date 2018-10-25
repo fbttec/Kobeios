@@ -1,0 +1,867 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01BA5837EEC99063FB4E4673A32CEA35 /* Pods-Kobeios_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EAA8475C128A6BDD8EE4EB2760FDEC5 /* Pods-Kobeios_Example-dummy.m */; };
+		114865C01F58ED4A004F3E10 /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114865BF1F58ED4A004F3E10 /* Dynamic.swift */; };
+		114865C31F58EE65004F3E10 /* Stringable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114865C21F58EE65004F3E10 /* Stringable.swift */; };
+		114865C51F58F310004F3E10 /* UIVIewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114865C41F58F310004F3E10 /* UIVIewExtension.swift */; };
+		114865C71F58F4D7004F3E10 /* AlertExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114865C61F58F4D7004F3E10 /* AlertExtension.swift */; };
+		114865CA1F58F585004F3E10 /* Keyboardable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114865C91F58F585004F3E10 /* Keyboardable.swift */; };
+		114865CC1F58F67A004F3E10 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114865CB1F58F67A004F3E10 /* UIColorExtension.swift */; };
+		1BE7D195C509A98C27C4C621821C1133 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		2D5118F3302C32B3AB7796C84A4B6F67 /* Pods-Kobeios_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E657781B337B0C7C31FC14686936A95D /* Pods-Kobeios_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3CAB8C25B850AF719EAE437AA109A82A /* Pods-Kobeios_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 77C0E9C2788291A642705A25B9CECF65 /* Pods-Kobeios_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		99A482062FEBFF5774D5144EB61D046D /* Kobeios-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B84A3E3A50B03AFB519F0A139F2E5BF8 /* Kobeios-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A555560667E68B16F9F0D01B31DA8E60 /* Kobeios-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4767A136C99C34905C38B2BCC34D15F0 /* Kobeios-dummy.m */; };
+		CEEC887D905476C843D1CCA2ED1B3795 /* Pods-Kobeios_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A7C4A2881C0C648D157079AE3AC3FD5 /* Pods-Kobeios_Tests-dummy.m */; };
+		D4E0AEE98194E22C24ECBDBF7AAD3A93 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		E90C80492141A5C700919AC8 /* AnimationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90C80482141A5C700919AC8 /* AnimationExtensions.swift */; };
+		E9114BF620EEA20C00CF5BBC /* TextfieldLabeled.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9114BF520EEA20C00CF5BBC /* TextfieldLabeled.swift */; };
+		E91492FF213EE2630096074E /* UITextViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91492FE213EE2630096074E /* UITextViewExtension.swift */; };
+		E926370B21363FC1004F1306 /* UIDeviceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E926370A21363FC1004F1306 /* UIDeviceExtension.swift */; };
+		E94D01BF2118BCCD00EEAEF5 /* LayoutExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94D01BE2118BCCD00EEAEF5 /* LayoutExtensions.swift */; };
+		E955427E213E02080011753D /* IntExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E955427D213E02080011753D /* IntExtension.swift */; };
+		E95AE7A6212B560B003DA246 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95AE7A5212B560B003DA246 /* GradientView.swift */; };
+		E95AE7A8212B7220003DA246 /* GradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95AE7A7212B7220003DA246 /* GradientButton.swift */; };
+		E95DFE2D20F3E7B300A8B44E /* StringMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95DFE2C20F3E7B300A8B44E /* StringMessages.swift */; };
+		E96C3773216BA1C4009AAAC8 /* EmbedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96C3772216BA1C4009AAAC8 /* EmbedViewController.swift */; };
+		E99397512111030800504915 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99397502111030800504915 /* UIButtonExtension.swift */; };
+		E9BBB242210982C80020CD85 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BBB241210982C80020CD85 /* StringExtension.swift */; };
+		E9BBB244210A3AE30020CD85 /* UICellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BBB243210A3AE30020CD85 /* UICellDelegate.swift */; };
+		E9C0A066213468A800B2410A /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C0A065213468A800B2410A /* UILabelExtension.swift */; };
+		E9C526252124C96D004C66E8 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C526242124C96D004C66E8 /* DateExtension.swift */; };
+		FF0282C7C0220A1733510030FD6DBE80 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		77115D97071DF728CE1B726EC2C393F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 56AE3B373931EFEE2B7C330FF56B2EB5;
+			remoteInfo = Kobeios;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		114865BF1F58ED4A004F3E10 /* Dynamic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
+		114865C21F58EE65004F3E10 /* Stringable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stringable.swift; sourceTree = "<group>"; };
+		114865C41F58F310004F3E10 /* UIVIewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIVIewExtension.swift; sourceTree = "<group>"; };
+		114865C61F58F4D7004F3E10 /* AlertExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertExtension.swift; sourceTree = "<group>"; };
+		114865C91F58F585004F3E10 /* Keyboardable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keyboardable.swift; sourceTree = "<group>"; };
+		114865CB1F58F67A004F3E10 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		130D32F5A68EA8DE929C28B059F21B6F /* Pods-Kobeios_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Kobeios_Tests-resources.sh"; sourceTree = "<group>"; };
+		1CC430D40D4BC1F4D82346D27AC063CE /* Pods-Kobeios_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Kobeios_Example-frameworks.sh"; sourceTree = "<group>"; };
+		29D0C235B0B6BBA8FA85BE8A1E1C8074 /* Kobeios-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Kobeios-prefix.pch"; sourceTree = "<group>"; };
+		2E1F14EBEE10DE89A613341E5C1782B4 /* Pods-Kobeios_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Kobeios_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		3674E9DB0A6F76EED54AE910DD8829A5 /* Pods-Kobeios_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Kobeios_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		37A22C17301FF7413A53A8702C225A64 /* Kobeios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Kobeios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4767A136C99C34905C38B2BCC34D15F0 /* Kobeios-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Kobeios-dummy.m"; sourceTree = "<group>"; };
+		4779E375E6DF010667B43A69F8F10D2B /* Pods_Kobeios_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kobeios_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A6B521521A2CB1F3CD0BD3571032F3F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4AE239B5105046224470809F771D3D5F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		698421782AE5F63978369FCC00D63925 /* Pods-Kobeios_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Kobeios_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		77C0E9C2788291A642705A25B9CECF65 /* Pods-Kobeios_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Kobeios_Example-umbrella.h"; sourceTree = "<group>"; };
+		7E92229F9D8AC4DD30971BBC4A1C3FEA /* Pods-Kobeios_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Kobeios_Tests.modulemap"; sourceTree = "<group>"; };
+		7EAA8475C128A6BDD8EE4EB2760FDEC5 /* Pods-Kobeios_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Kobeios_Example-dummy.m"; sourceTree = "<group>"; };
+		8A7C4A2881C0C648D157079AE3AC3FD5 /* Pods-Kobeios_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Kobeios_Tests-dummy.m"; sourceTree = "<group>"; };
+		9317870427F4C2A2FF3B39B3A9BAA6BE /* Pods-Kobeios_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Kobeios_Example-resources.sh"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		941B81625DC9ABBCE674EB753C8817C6 /* Pods-Kobeios_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Kobeios_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		99E6F3E14976C1884A541A718B4FA8F8 /* Kobeios.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Kobeios.modulemap; sourceTree = "<group>"; };
+		9CEE0809B01202D88E37D20A6D155BBE /* Pods-Kobeios_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Kobeios_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		A7B662699EB8B647FB6D79F903B44C2B /* Pods-Kobeios_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Kobeios_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		AE2C43BFD801B264CCD9BDE49BBAF91A /* Pods-Kobeios_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Kobeios_Example.modulemap"; sourceTree = "<group>"; };
+		AF645385D762BD1600D2718E4C82524D /* Pods-Kobeios_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Kobeios_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B84A3E3A50B03AFB519F0A139F2E5BF8 /* Kobeios-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Kobeios-umbrella.h"; sourceTree = "<group>"; };
+		C1BF6C79FCA8B66C02A28A01936ADBC9 /* Kobeios.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Kobeios.xcconfig; sourceTree = "<group>"; };
+		C9AFE17382DC8EEBADEBA7D002ECB3D9 /* Pods-Kobeios_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Kobeios_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		CC94B2EEDDAB0EB54D45FAB74935B89C /* Pods_Kobeios_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kobeios_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DECCCD724AA8B8C76AFBB96B111D35B0 /* Pods-Kobeios_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Kobeios_Example.release.xcconfig"; sourceTree = "<group>"; };
+		E657781B337B0C7C31FC14686936A95D /* Pods-Kobeios_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Kobeios_Tests-umbrella.h"; sourceTree = "<group>"; };
+		E90C80482141A5C700919AC8 /* AnimationExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationExtensions.swift; sourceTree = "<group>"; };
+		E9114BF520EEA20C00CF5BBC /* TextfieldLabeled.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextfieldLabeled.swift; sourceTree = "<group>"; };
+		E91492FE213EE2630096074E /* UITextViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextViewExtension.swift; sourceTree = "<group>"; };
+		E926370A21363FC1004F1306 /* UIDeviceExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDeviceExtension.swift; sourceTree = "<group>"; };
+		E94D01BE2118BCCD00EEAEF5 /* LayoutExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutExtensions.swift; sourceTree = "<group>"; };
+		E955427D213E02080011753D /* IntExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntExtension.swift; sourceTree = "<group>"; };
+		E95AE7A5212B560B003DA246 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		E95AE7A7212B7220003DA246 /* GradientButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientButton.swift; sourceTree = "<group>"; };
+		E95DFE2C20F3E7B300A8B44E /* StringMessages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringMessages.swift; sourceTree = "<group>"; };
+		E96C3772216BA1C4009AAAC8 /* EmbedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmbedViewController.swift; sourceTree = "<group>"; };
+		E99397502111030800504915 /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
+		E9BBB241210982C80020CD85 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		E9BBB243210A3AE30020CD85 /* UICellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICellDelegate.swift; sourceTree = "<group>"; };
+		E9C0A065213468A800B2410A /* UILabelExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelExtension.swift; sourceTree = "<group>"; };
+		E9C526242124C96D004C66E8 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		EEC061CD11360B6F1FD7FD68611D05A2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		06A1AB154873B831052105231A4D4D05 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF0282C7C0220A1733510030FD6DBE80 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B9FB9B260F7716F3506E0FE47CC460B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4E0AEE98194E22C24ECBDBF7AAD3A93 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F284AD5493CC756D675EE23E03E32253 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BE7D195C509A98C27C4C621821C1133 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		11D067DB03B1AB95AF04BF0FBC403BDA /* Kobeios */ = {
+			isa = PBXGroup;
+			children = (
+				41B299895192EC9170C661CA17B129AE /* Classes */,
+			);
+			path = Kobeios;
+			sourceTree = "<group>";
+		};
+		1C55FC990C988907CAD351D98D5FF819 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4A6B521521A2CB1F3CD0BD3571032F3F /* Info.plist */,
+				99E6F3E14976C1884A541A718B4FA8F8 /* Kobeios.modulemap */,
+				C1BF6C79FCA8B66C02A28A01936ADBC9 /* Kobeios.xcconfig */,
+				4767A136C99C34905C38B2BCC34D15F0 /* Kobeios-dummy.m */,
+				29D0C235B0B6BBA8FA85BE8A1E1C8074 /* Kobeios-prefix.pch */,
+				B84A3E3A50B03AFB519F0A139F2E5BF8 /* Kobeios-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/Kobeios";
+			sourceTree = "<group>";
+		};
+		41B299895192EC9170C661CA17B129AE /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				E9114BF320EEA04C00CF5BBC /* UIKit */,
+				E99BEFAD20DAA74E006CF591 /* Trait */,
+				E99BEFAF20DAA75F006CF591 /* Common */,
+				E99BEFAC20DAA740006CF591 /* Extension */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		4CF3A952190E8DA4DD6B4D3E03007CE6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				37A22C17301FF7413A53A8702C225A64 /* Kobeios.framework */,
+				CC94B2EEDDAB0EB54D45FAB74935B89C /* Pods_Kobeios_Example.framework */,
+				4779E375E6DF010667B43A69F8F10D2B /* Pods_Kobeios_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		676CF652D33E8CB3AD2869843DEB5D1B /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7355ADFF95CAAF45D25F8FA757F2C14B /* Kobeios */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		7355ADFF95CAAF45D25F8FA757F2C14B /* Kobeios */ = {
+			isa = PBXGroup;
+			children = (
+				11D067DB03B1AB95AF04BF0FBC403BDA /* Kobeios */,
+				1C55FC990C988907CAD351D98D5FF819 /* Support Files */,
+			);
+			name = Kobeios;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				676CF652D33E8CB3AD2869843DEB5D1B /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				4CF3A952190E8DA4DD6B4D3E03007CE6 /* Products */,
+				A17CFD15D42833F8432791A83062E772 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8FCEA649B5DF9285F43ABFA999508AFA /* Pods-Kobeios_Example */ = {
+			isa = PBXGroup;
+			children = (
+				EEC061CD11360B6F1FD7FD68611D05A2 /* Info.plist */,
+				AE2C43BFD801B264CCD9BDE49BBAF91A /* Pods-Kobeios_Example.modulemap */,
+				698421782AE5F63978369FCC00D63925 /* Pods-Kobeios_Example-acknowledgements.markdown */,
+				9CEE0809B01202D88E37D20A6D155BBE /* Pods-Kobeios_Example-acknowledgements.plist */,
+				7EAA8475C128A6BDD8EE4EB2760FDEC5 /* Pods-Kobeios_Example-dummy.m */,
+				1CC430D40D4BC1F4D82346D27AC063CE /* Pods-Kobeios_Example-frameworks.sh */,
+				9317870427F4C2A2FF3B39B3A9BAA6BE /* Pods-Kobeios_Example-resources.sh */,
+				77C0E9C2788291A642705A25B9CECF65 /* Pods-Kobeios_Example-umbrella.h */,
+				A7B662699EB8B647FB6D79F903B44C2B /* Pods-Kobeios_Example.debug.xcconfig */,
+				DECCCD724AA8B8C76AFBB96B111D35B0 /* Pods-Kobeios_Example.release.xcconfig */,
+			);
+			name = "Pods-Kobeios_Example";
+			path = "Target Support Files/Pods-Kobeios_Example";
+			sourceTree = "<group>";
+		};
+		A17CFD15D42833F8432791A83062E772 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8FCEA649B5DF9285F43ABFA999508AFA /* Pods-Kobeios_Example */,
+				A1E2FBF6517145E5DCF72F6F23D987EF /* Pods-Kobeios_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		A1E2FBF6517145E5DCF72F6F23D987EF /* Pods-Kobeios_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				4AE239B5105046224470809F771D3D5F /* Info.plist */,
+				7E92229F9D8AC4DD30971BBC4A1C3FEA /* Pods-Kobeios_Tests.modulemap */,
+				AF645385D762BD1600D2718E4C82524D /* Pods-Kobeios_Tests-acknowledgements.markdown */,
+				3674E9DB0A6F76EED54AE910DD8829A5 /* Pods-Kobeios_Tests-acknowledgements.plist */,
+				8A7C4A2881C0C648D157079AE3AC3FD5 /* Pods-Kobeios_Tests-dummy.m */,
+				941B81625DC9ABBCE674EB753C8817C6 /* Pods-Kobeios_Tests-frameworks.sh */,
+				130D32F5A68EA8DE929C28B059F21B6F /* Pods-Kobeios_Tests-resources.sh */,
+				E657781B337B0C7C31FC14686936A95D /* Pods-Kobeios_Tests-umbrella.h */,
+				2E1F14EBEE10DE89A613341E5C1782B4 /* Pods-Kobeios_Tests.debug.xcconfig */,
+				C9AFE17382DC8EEBADEBA7D002ECB3D9 /* Pods-Kobeios_Tests.release.xcconfig */,
+			);
+			name = "Pods-Kobeios_Tests";
+			path = "Target Support Files/Pods-Kobeios_Tests";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		E9114BF320EEA04C00CF5BBC /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				E9114BF520EEA20C00CF5BBC /* TextfieldLabeled.swift */,
+				E9BBB243210A3AE30020CD85 /* UICellDelegate.swift */,
+				E95AE7A5212B560B003DA246 /* GradientView.swift */,
+				E95AE7A7212B7220003DA246 /* GradientButton.swift */,
+				E96C3772216BA1C4009AAAC8 /* EmbedViewController.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		E99BEFAC20DAA740006CF591 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				114865C41F58F310004F3E10 /* UIVIewExtension.swift */,
+				114865C61F58F4D7004F3E10 /* AlertExtension.swift */,
+				114865CB1F58F67A004F3E10 /* UIColorExtension.swift */,
+				E9BBB241210982C80020CD85 /* StringExtension.swift */,
+				E99397502111030800504915 /* UIButtonExtension.swift */,
+				E94D01BE2118BCCD00EEAEF5 /* LayoutExtensions.swift */,
+				E9C526242124C96D004C66E8 /* DateExtension.swift */,
+				E9C0A065213468A800B2410A /* UILabelExtension.swift */,
+				E926370A21363FC1004F1306 /* UIDeviceExtension.swift */,
+				E955427D213E02080011753D /* IntExtension.swift */,
+				E91492FE213EE2630096074E /* UITextViewExtension.swift */,
+				E90C80482141A5C700919AC8 /* AnimationExtensions.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		E99BEFAD20DAA74E006CF591 /* Trait */ = {
+			isa = PBXGroup;
+			children = (
+				114865C21F58EE65004F3E10 /* Stringable.swift */,
+				114865C91F58F585004F3E10 /* Keyboardable.swift */,
+			);
+			path = Trait;
+			sourceTree = "<group>";
+		};
+		E99BEFAF20DAA75F006CF591 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				114865BF1F58ED4A004F3E10 /* Dynamic.swift */,
+				E95DFE2C20F3E7B300A8B44E /* StringMessages.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		30601D591C970F18D0525EB5B70CE1EA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CAB8C25B850AF719EAE437AA109A82A /* Pods-Kobeios_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8ACC565A64C35628AD12B96B5461639 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D5118F3302C32B3AB7796C84A4B6F67 /* Pods-Kobeios_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F390ED9A2FA86DAB67C323B4BBED0128 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99A482062FEBFF5774D5144EB61D046D /* Kobeios-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		41E3EC7A1738311C3DB65CDA71FB52F0 /* Pods-Kobeios_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71C5BF4F1CADD63C80BC6FE2CB1348D8 /* Build configuration list for PBXNativeTarget "Pods-Kobeios_Example" */;
+			buildPhases = (
+				2B3A7836D0E385414E6195C4071C2A64 /* Sources */,
+				06A1AB154873B831052105231A4D4D05 /* Frameworks */,
+				30601D591C970F18D0525EB5B70CE1EA /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04BE66A7FA1E0C76A29A860B838B10C9 /* PBXTargetDependency */,
+			);
+			name = "Pods-Kobeios_Example";
+			productName = "Pods-Kobeios_Example";
+			productReference = CC94B2EEDDAB0EB54D45FAB74935B89C /* Pods_Kobeios_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		47F05EF56037497764A4AF1FF00CC3A8 /* Pods-Kobeios_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4E43FE438D05C717B8C06CDC6509CBB /* Build configuration list for PBXNativeTarget "Pods-Kobeios_Tests" */;
+			buildPhases = (
+				48D5EE8620B7426D5DF8255203695B15 /* Sources */,
+				2B9FB9B260F7716F3506E0FE47CC460B /* Frameworks */,
+				E8ACC565A64C35628AD12B96B5461639 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Kobeios_Tests";
+			productName = "Pods-Kobeios_Tests";
+			productReference = 4779E375E6DF010667B43A69F8F10D2B /* Pods_Kobeios_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		56AE3B373931EFEE2B7C330FF56B2EB5 /* Kobeios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 070DF7D50F1F202B463DD4F435F59AA9 /* Build configuration list for PBXNativeTarget "Kobeios" */;
+			buildPhases = (
+				9AE46C4FB64C62C258EA3F7CF31395F6 /* Sources */,
+				F284AD5493CC756D675EE23E03E32253 /* Frameworks */,
+				F390ED9A2FA86DAB67C323B4BBED0128 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Kobeios;
+			productName = Kobeios;
+			productReference = 37A22C17301FF7413A53A8702C225A64 /* Kobeios.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0940;
+				TargetAttributes = {
+					56AE3B373931EFEE2B7C330FF56B2EB5 = {
+						LastSwiftMigration = 1000;
+					};
+				};
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 4CF3A952190E8DA4DD6B4D3E03007CE6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				56AE3B373931EFEE2B7C330FF56B2EB5 /* Kobeios */,
+				41E3EC7A1738311C3DB65CDA71FB52F0 /* Pods-Kobeios_Example */,
+				47F05EF56037497764A4AF1FF00CC3A8 /* Pods-Kobeios_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2B3A7836D0E385414E6195C4071C2A64 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01BA5837EEC99063FB4E4673A32CEA35 /* Pods-Kobeios_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48D5EE8620B7426D5DF8255203695B15 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEEC887D905476C843D1CCA2ED1B3795 /* Pods-Kobeios_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AE46C4FB64C62C258EA3F7CF31395F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E95AE7A6212B560B003DA246 /* GradientView.swift in Sources */,
+				A555560667E68B16F9F0D01B31DA8E60 /* Kobeios-dummy.m in Sources */,
+				E9C0A066213468A800B2410A /* UILabelExtension.swift in Sources */,
+				E926370B21363FC1004F1306 /* UIDeviceExtension.swift in Sources */,
+				E9C526252124C96D004C66E8 /* DateExtension.swift in Sources */,
+				114865C51F58F310004F3E10 /* UIVIewExtension.swift in Sources */,
+				E94D01BF2118BCCD00EEAEF5 /* LayoutExtensions.swift in Sources */,
+				E90C80492141A5C700919AC8 /* AnimationExtensions.swift in Sources */,
+				E9BBB244210A3AE30020CD85 /* UICellDelegate.swift in Sources */,
+				E9BBB242210982C80020CD85 /* StringExtension.swift in Sources */,
+				E96C3773216BA1C4009AAAC8 /* EmbedViewController.swift in Sources */,
+				114865CC1F58F67A004F3E10 /* UIColorExtension.swift in Sources */,
+				E955427E213E02080011753D /* IntExtension.swift in Sources */,
+				E99397512111030800504915 /* UIButtonExtension.swift in Sources */,
+				E95AE7A8212B7220003DA246 /* GradientButton.swift in Sources */,
+				E9114BF620EEA20C00CF5BBC /* TextfieldLabeled.swift in Sources */,
+				114865C71F58F4D7004F3E10 /* AlertExtension.swift in Sources */,
+				114865CA1F58F585004F3E10 /* Keyboardable.swift in Sources */,
+				114865C01F58ED4A004F3E10 /* Dynamic.swift in Sources */,
+				E95DFE2D20F3E7B300A8B44E /* StringMessages.swift in Sources */,
+				114865C31F58EE65004F3E10 /* Stringable.swift in Sources */,
+				E91492FF213EE2630096074E /* UITextViewExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		04BE66A7FA1E0C76A29A860B838B10C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Kobeios;
+			target = 56AE3B373931EFEE2B7C330FF56B2EB5 /* Kobeios */;
+			targetProxy = 77115D97071DF728CE1B726EC2C393F0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		345CC476DF4A7516DBD2220CF5035FF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		39240981294136D31C788D24E1900E07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9AFE17382DC8EEBADEBA7D002ECB3D9 /* Pods-Kobeios_Tests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Kobeios_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Kobeios_Tests/Pods-Kobeios_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Kobeios_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5BB7456A19C81B140C5887F9D7A80171 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1BF6C79FCA8B66C02A28A01936ADBC9 /* Kobeios.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Kobeios/Kobeios-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Kobeios/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Kobeios/Kobeios.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Kobeios;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		717E77604BFBB04BEAF56608A1CB2EDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		89AA0F3B6304C32BFB0D44857900DAA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E1F14EBEE10DE89A613341E5C1782B4 /* Pods-Kobeios_Tests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Kobeios_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Kobeios_Tests/Pods-Kobeios_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Kobeios_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8F823986A8B75E8F62FB4A9FF1C1322B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DECCCD724AA8B8C76AFBB96B111D35B0 /* Pods-Kobeios_Example.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Kobeios_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Kobeios_Example/Pods-Kobeios_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Kobeios_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		917BD80B1CEA93215381E4D9ABE8592A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7B662699EB8B647FB6D79F903B44C2B /* Pods-Kobeios_Example.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Kobeios_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Kobeios_Example/Pods-Kobeios_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Kobeios_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E3819AF618F4F348A0A3CD103E5D0117 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1BF6C79FCA8B66C02A28A01936ADBC9 /* Kobeios.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Kobeios/Kobeios-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Kobeios/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Kobeios/Kobeios.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Kobeios;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		070DF7D50F1F202B463DD4F435F59AA9 /* Build configuration list for PBXNativeTarget "Kobeios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3819AF618F4F348A0A3CD103E5D0117 /* Debug */,
+				5BB7456A19C81B140C5887F9D7A80171 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				345CC476DF4A7516DBD2220CF5035FF3 /* Debug */,
+				717E77604BFBB04BEAF56608A1CB2EDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		71C5BF4F1CADD63C80BC6FE2CB1348D8 /* Build configuration list for PBXNativeTarget "Pods-Kobeios_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				917BD80B1CEA93215381E4D9ABE8592A /* Debug */,
+				8F823986A8B75E8F62FB4A9FF1C1322B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4E43FE438D05C717B8C06CDC6509CBB /* Build configuration list for PBXNativeTarget "Pods-Kobeios_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89AA0F3B6304C32BFB0D44857900DAA6 /* Debug */,
+				39240981294136D31C788D24E1900E07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

@@ -1,0 +1,6 @@
+framework module Pods_Kobeios_Example {
+  umbrella header "Pods-Kobeios_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

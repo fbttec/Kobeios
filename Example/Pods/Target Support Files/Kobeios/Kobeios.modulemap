@@ -1,0 +1,6 @@
+framework module Kobeios {
+  umbrella header "Kobeios-umbrella.h"
+
+  export *
+  module * { export * }
+}

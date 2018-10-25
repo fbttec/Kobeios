@@ -1,0 +1,16 @@
+PODS:
+  - Kobeios (0.1.0)
+
+DEPENDENCIES:
+  - Kobeios (from `../`)
+
+EXTERNAL SOURCES:
+  Kobeios:
+    :path: ../
+
+SPEC CHECKSUMS:
+  Kobeios: 56d5e44b224775ef32787315e30ab0a87c34a7e0
+
+PODFILE CHECKSUM: e920b4d64cdcd56aaa391e8a7cc127dadbff456d
+
+COCOAPODS: 1.2.1

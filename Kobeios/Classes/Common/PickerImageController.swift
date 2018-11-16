@@ -7,6 +7,7 @@
 
 import UIKit
 import Foundation
+import Photos
 
 /**
     PickerImage allows the user select an image from the camera or the album
@@ -35,9 +36,40 @@ public class PickerImageController: UIViewController, UINavigationControllerDele
         view.isOpaque = false
     }
     
+    func checkPermission(result: @escaping (_ result: Bool) -> Void) {
+        let photoAuthorizationStatus = PHPhotoLibrary.authorizationStatus()
+        switch photoAuthorizationStatus {
+            case .authorized:
+                result(true)
+            case .notDetermined:
+                PHPhotoLibrary.requestAuthorization { (newStatus) in
+                    if newStatus == PHAuthorizationStatus.authorized {
+                        result(true)
+                    } else {
+                        result(false)
+                    }   
+                }
+            case .restricted:
+                result(false)
+            case .denied:
+                result(false)
+            }
+    }
+    
+    
     /// Display the ActionSheet to choose the photo or the album
     public func displayActionSheetPhotoPicker() {
-        
+        checkPermission { (permissionGranted) in
+            if permissionGranted {
+                self.displayActionSheet()
+            } else {
+                self.displayAlert(message: "Please turn on Photo access", action: nil)
+                self.dismiss(animated: true, completion: nil)
+            }
+        }
+    }
+    
+    func displayActionSheet() {
         let alertController = UIAlertController(title: nil,
                                                 message: nil,
                                                 preferredStyle: .actionSheet)
@@ -75,7 +107,7 @@ extension PickerImageController: UIImagePickerControllerDelegate {
         }
     }
     
-    func imagePickerController(_ picker: UIImagePickerController,
+    @objc func imagePickerController(_ picker: UIImagePickerController,
                                didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         if let image = info[.originalImage] as? UIImage {
             DispatchQueue.main.async { [weak self] in

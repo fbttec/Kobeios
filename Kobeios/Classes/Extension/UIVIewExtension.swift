@@ -70,6 +70,7 @@ public extension UIView {
         }
         set {
             if newValue == true {
+                removeShadow()
                 addDefaultShadow()
             } else {
                 removeShadow()
